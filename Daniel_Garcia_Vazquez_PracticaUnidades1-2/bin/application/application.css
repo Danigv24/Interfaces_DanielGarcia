@@ -3,19 +3,19 @@
     -fx-background-size: 900 600;
     -fx-background-position: center center;
     -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
-   
+   	-fx-background-color:orange;
 }
 
 .MenuBar{
 	 -fx-background-color: #000000;
 	
 }
-.menu-bar .label{
+.menu-bar.label{
 	-fx-text-fill: white;
 	
 }
 
-.menu-item .label{
+.menu-item.label{
     -fx-font-size: 14.0 pt;
-    -fx-text-fill: black;
+    -fx-text-fill: brown;
 }

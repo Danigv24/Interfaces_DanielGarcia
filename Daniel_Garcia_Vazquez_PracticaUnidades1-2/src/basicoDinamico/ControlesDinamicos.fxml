@@ -7,7 +7,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
@@ -96,11 +96,6 @@
             <Insets left="10.0" />
          </padding>
       </Label>
-      <TextArea prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
-         <padding>
-            <Insets top="100.0" />
-         </padding>
-      </TextArea>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
          <children>
             <Button mnemonicParsing="false" text="Enviar">
@@ -111,5 +106,6 @@
             <Button mnemonicParsing="false" text="Nuevo Pedido" />
          </children>
       </HBox>
+      <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
    </children>
 </GridPane>
