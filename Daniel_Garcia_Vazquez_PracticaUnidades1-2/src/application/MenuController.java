@@ -5,6 +5,7 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
@@ -35,6 +36,47 @@ public class MenuController {
     
     @FXML
     private void cerrarListado(ActionEvent event) {    	
+    	// Se elimina el contenido del nodo central
+    	rootLayout.setCenter(null);	
+    }
+    
+    @FXML
+    private void abrirFormulario2(ActionEvent event) {    	
+    	try {
+			// Cargamos el archivo Controles Dinámicos
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesDinamicosB.fxml"));
+			BorderPane listadoControles = (BorderPane) loader.load();
+
+			// Se sitúa en el centro del diseño principal
+			rootLayout.setCenter(listadoControles);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    }
+    
+    @FXML
+    private void cerrarListado2(ActionEvent event) {    	
+    	// Se elimina el contenido del nodo central
+    	rootLayout.setCenter(null);	
+    }
+    @FXML
+    private void abrirFormulario3(ActionEvent event) {    	
+    	try {
+			// Cargamos el archivo Controles Dinámicos
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesDinamicosB.fxml"));
+			AnchorPane listadoControles = (AnchorPane) loader.load();
+
+			// Se sitúa en el centro del diseño principal
+			rootLayout.setCenter(listadoControles);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    }
+    
+    @FXML
+    private void cerrarListado3(ActionEvent event) {    	
     	// Se elimina el contenido del nodo central
     	rootLayout.setCenter(null);	
     }
