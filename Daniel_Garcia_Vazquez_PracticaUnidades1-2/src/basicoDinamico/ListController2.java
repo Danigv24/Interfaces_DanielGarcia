@@ -63,7 +63,10 @@ public class ListController2 {
         
         list1.getItems().addAll("Carlos Sainz (Staff)","Charles Lecrecl (Staff)",
         		"Lando Norris(Supervisor)","Nicolas Latifi(Assitant Manager)",
-        		"Max Verstappen(Staff)","Fernando Alonso(Manager)");
+        		"Max Verstappen(Staff)","Fernando Alonso(Manager)"
+        		,"Lewis Hamilton(Staff)","Sebastian Vettel(Supervisor)",
+        		"George Russel(Staff)","Alexander Albon(Staff)",
+        		"Mick Schumacher(Staff)");
         list1.setCellFactory(TextFieldListCell.forListView());
         list1.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
        

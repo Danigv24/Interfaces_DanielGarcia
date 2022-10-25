@@ -3,7 +3,7 @@
     -fx-background-size: 900 600;
     -fx-background-position: center center;
     -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
-   	-fx-background-color:orange;
+   	-fx-background-color:#F8C471;
 }
 
 .MenuBar{
