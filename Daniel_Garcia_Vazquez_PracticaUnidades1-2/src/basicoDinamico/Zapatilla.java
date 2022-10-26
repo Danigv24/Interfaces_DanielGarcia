@@ -1,6 +1,6 @@
 package basicoDinamico;
 
-import javafx.beans.property.SimpleIntegerProperty;
+
 import javafx.beans.property.SimpleStringProperty;
 
 /**
@@ -12,12 +12,12 @@ import javafx.beans.property.SimpleStringProperty;
  */
 public class Zapatilla {
     private final SimpleStringProperty Name;
-    private final SimpleIntegerProperty Stock;
+    private final SimpleStringProperty Stock;
    
  
-    public Zapatilla(String Name,Integer Stock) {
+    public Zapatilla(String Name,String Stock) {
         this.Name = new SimpleStringProperty(Name);
-        this.Stock = new SimpleIntegerProperty(Stock);
+        this.Stock = new SimpleStringProperty(Stock);
        
     }
  
@@ -29,10 +29,10 @@ public class Zapatilla {
     	Name.set(fName);
     }
         
-    public Integer getStock() {
+    public String getStock() {
         return Stock.get();
     }
-    public void setStock (Integer fName) {
+    public void setStock (String fName) {
     	Stock.set(fName);
     }
     
