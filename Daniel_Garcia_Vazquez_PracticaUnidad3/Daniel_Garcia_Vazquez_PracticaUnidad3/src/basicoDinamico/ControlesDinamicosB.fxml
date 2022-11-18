@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="499.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="basicoDinamico.ListController2">
+   <right>
+      <TableView fx:id="tablaZapa" editable="true" prefHeight="367.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="Name" prefWidth="122.0" text="Zapatilla" />
+          <TableColumn fx:id="Stock" prefWidth="74.66665649414062" text="Stock" />
+        </columns>
+      </TableView>
+   </right>
+   <top>
+      <Label prefWidth="376.0" text="Empleados y Stock" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Century Schoolbook" size="43.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <ListView fx:id="list1" editable="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+  
+   </left>
+   <center>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagenes/air-force-1-zapatillas.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagenes/air-max-90-zapatillas.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagenes/adidas.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </FlowPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#AgregarStock" text="Añadir Stock">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
