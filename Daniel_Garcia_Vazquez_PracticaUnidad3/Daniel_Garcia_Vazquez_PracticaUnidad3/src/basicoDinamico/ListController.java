@@ -4,6 +4,7 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.ListChangeListener.Change;
 import javafx.fxml.FXML;
+import javafx.scene.Cursor;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
@@ -103,6 +104,19 @@ public class ListController {
         txtDescripcion.setOnKeyPressed((event) -> mostrarTecla(event));
         txtDescripcion.setOnKeyReleased((event) -> mostrarTecla(event));
         txtDescripcion.setOnKeyTyped((event) -> mostrarTecla(event));
+        
+        if(txtDescripcion!=null) {
+        	txtDescripcion.setOnMouseEntered((event->
+        	txtDescripcion.setCursor(Cursor.HAND)));
+    	}
+        if(combo1!=null) {
+        	combo1.setOnMouseEntered((event->
+        	combo1.setCursor(Cursor.HAND)));
+    	}
+        if(choice1!=null) {
+        	choice1.setOnMouseEntered((event->
+        	choice1.setCursor(Cursor.HAND)));
+    	}
        
     }
     @FXML

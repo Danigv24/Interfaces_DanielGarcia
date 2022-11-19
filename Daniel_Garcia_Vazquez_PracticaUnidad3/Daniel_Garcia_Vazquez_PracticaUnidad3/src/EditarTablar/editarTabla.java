@@ -6,7 +6,7 @@ import basicoDinamico.Zapatilla;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-
+import javafx.scene.Cursor;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 
@@ -41,11 +41,14 @@ public class editarTabla {
 	     */
 	    @FXML
 	    private void initialize() {
-//    		zapatilla=FXCollections.observableArrayList();
-//    		this.tablaZapa.setItems(zapatilla);
-//	    	
-//	    	this.Name.setCellValueFactory(new PropertyValueFactory("Name"));
-//	    	this.Stock.setCellValueFactory(new PropertyValueFactory("Stock"));
+	    	if(txtName!=null) {
+	    		txtName.setOnMouseEntered((event->
+	    		txtName.setCursor(Cursor.HAND)));
+	    	}
+	    	if(txtStock!=null) {
+	    		txtStock.setOnMouseEntered((event->
+	    		txtStock.setCursor(Cursor.HAND)));
+	    	}
 	    }
 	    public void iniAtributtes(ObservableList<Zapatilla> zapatilla) {
 	    	this.zapatilla=zapatilla;
