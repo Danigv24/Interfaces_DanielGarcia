@@ -1,6 +1,7 @@
 package application;
 	
 
+
 import javafx.application.Application;
 
 import javafx.fxml.FXMLLoader;
@@ -14,6 +15,7 @@ import javafx.scene.layout.StackPane;
 
 
 public class Main extends Application {
+
 	private BorderPane rootLayout;	
 	@Override
 	public void start(Stage primaryStage) {
@@ -34,7 +36,7 @@ public class Main extends Application {
 			primaryStage.show();
 			StackPane root = new StackPane();
 	        root.setId("pane");
-	        scene.getStylesheets().addAll(this.getClass().getResource("application.css").toExternalForm());
+	        scene.getStylesheets().addAll(this.getClass().getResource("CSS_DanielGarcia.css").toExternalForm());
 	        primaryStage.setScene(scene);
 	        primaryStage.show();
 		} catch (Exception e) {
@@ -45,6 +47,9 @@ public class Main extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
-
+	/**
+	 * Se abre un diálogo con las estadísticas de fecha de nacimiento
+	 */
+	
 	
 }

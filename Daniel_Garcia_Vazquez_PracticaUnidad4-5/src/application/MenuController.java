@@ -2,14 +2,19 @@ package application;
 
 import java.io.IOException;
 
+import graficos.TopVentasController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 public class MenuController {
+	
+	private Stage primaryStage;
 	
 	// Pantalla principal en la que se añade o quita contenido
 	private BorderPane rootLayout;
@@ -80,6 +85,29 @@ public class MenuController {
     	// Se elimina el contenido del nodo central
     	rootLayout.setCenter(null);	
     }
+    @FXML
+    public void showTopVentas() {
+	    try {
+	        // Carga el fichero XML con el pop up de las estadísticas
+	        FXMLLoader loader = new FXMLLoader();
+	        loader.setLocation(Main.class.getResource("/graficos/GraficoTopVentas.fxml"));
+	        AnchorPane page = (AnchorPane) loader.load();
+	        Stage dialogStage = new Stage();
+	        dialogStage.setTitle("Top Ventas");
+	        dialogStage.initModality(Modality.WINDOW_MODAL);
+	        dialogStage.initOwner(primaryStage);
+	        Scene scene = new Scene(page);
+	        dialogStage.setScene(scene);
+
+	        TopVentasController controller = loader.getController();
+	        
+
+	        dialogStage.show();
+
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	}
 
 	public BorderPane getRootLayout() {
 		return rootLayout;
