@@ -32,6 +32,7 @@ import javafx.scene.control.TreeView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldListCell;
 import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
@@ -39,6 +40,12 @@ import javafx.stage.Stage;
 
 
 public class ListController2  {
+	@FXML
+	private ImageView zapa1;
+	@FXML
+	private ImageView zapa2;
+	@FXML
+	private ImageView zapa3;
 	@FXML
     private Button btnAniadir;
 

@@ -100,7 +100,7 @@ public class MenuController {
 	        dialogStage.initOwner(primaryStage);
 	        Scene scene = new Scene(page);
 	        dialogStage.setScene(scene);
-
+	        scene.getStylesheets().addAll(this.getClass().getResource("/graficos/GraficosCSS_DanielGarcia.css").toExternalForm());
 	        TopVentasController controller = loader.getController();
 	        
 
@@ -123,7 +123,7 @@ public class MenuController {
 	        dialogStage.initOwner(primaryStage);
 	        Scene scene = new Scene(page);
 	        dialogStage.setScene(scene);
-
+	        scene.getStylesheets().addAll(this.getClass().getResource("/graficos/GraficosCSS_DanielGarcia.css").toExternalForm());
 	        CrecimientoController controller = loader.getController();
 	       
 
@@ -146,7 +146,7 @@ public class MenuController {
 	        dialogStage.initOwner(primaryStage);
 	        Scene scene = new Scene(page);
 	        dialogStage.setScene(scene);
-
+	        scene.getStylesheets().addAll(this.getClass().getResource("/graficos/GraficosCSS_DanielGarcia.css").toExternalForm());
 	        PicodeVentasController controller = loader.getController();
 	       
 

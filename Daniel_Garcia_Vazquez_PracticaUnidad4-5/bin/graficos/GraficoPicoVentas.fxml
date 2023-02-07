@@ -13,7 +13,7 @@
           <CategoryAxis side="BOTTOM" />
         </xAxis>
         <yAxis>
-          <NumberAxis label="Millones" side="LEFT">
+          <NumberAxis side="LEFT">
                <tickLabelFont>
                   <Font name="System Bold" size="10.0" />
                </tickLabelFont></NumberAxis>

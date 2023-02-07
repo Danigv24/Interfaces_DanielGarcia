@@ -23,7 +23,7 @@ public class PicodeVentasController {
 
 //		// Se crean dos series con datos
 		XYChart.Series<String, Number> pico = new XYChart.Series<String, Number>();
-		pico.setName("2022");
+		pico.setName("Millones");
 		pico.getData().add(new XYChart.Data<String, Number>("2010", 9));
 		pico.getData().add(new XYChart.Data<String, Number>("2011", 7));
 		pico.getData().add(new XYChart.Data<String, Number>("2012", 6));
