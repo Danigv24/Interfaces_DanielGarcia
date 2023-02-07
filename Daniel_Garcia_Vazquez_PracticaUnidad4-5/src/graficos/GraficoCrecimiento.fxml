@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graficos.CrecimientoController">
+   <children>
+      <StackedBarChart fx:id="stackedBarChart" onDragDetected="#initialize" title="Nuestro Creciemiento">
+        <xAxis>
+          <CategoryAxis prefHeight="43.0" prefWidth="443.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis autoRanging="false" side="LEFT" upperBound="50.0" />
+        </yAxis>
+      </StackedBarChart>
+   </children>
+</AnchorPane>

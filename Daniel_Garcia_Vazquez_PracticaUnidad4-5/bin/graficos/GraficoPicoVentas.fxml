@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graficos.PicodeVentasController">
+   <children>
+      <LineChart fx:id="lineChart" onDragDetected="#initialize">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Millones" side="LEFT">
+               <tickLabelFont>
+                  <Font name="System Bold" size="10.0" />
+               </tickLabelFont></NumberAxis>
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

@@ -34,8 +34,8 @@
             <Menu mnemonicParsing="false" text="Datos">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#showTopVentas" text="Top Ventas" />
-                  <MenuItem mnemonicParsing="false" text="Pico de Ventas" />
-                  <MenuItem mnemonicParsing="false" text="Nuestro Crecimiento" />
+                  <MenuItem mnemonicParsing="false" onAction="#showPico" text="Pico de Ventas" />
+                  <MenuItem mnemonicParsing="false" onAction="#showCrecimiento" text="Nuestro Crecimiento" />
               </items>
             </Menu>
         </menus>

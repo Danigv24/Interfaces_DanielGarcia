@@ -2,6 +2,8 @@ package application;
 
 import java.io.IOException;
 
+import graficos.CrecimientoController;
+import graficos.PicodeVentasController;
 import graficos.TopVentasController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,7 +17,7 @@ import javafx.stage.Stage;
 public class MenuController {
 	
 	private Stage primaryStage;
-	
+	private CrecimientoController creciController;
 	// Pantalla principal en la que se añade o quita contenido
 	private BorderPane rootLayout;
   
@@ -101,6 +103,52 @@ public class MenuController {
 
 	        TopVentasController controller = loader.getController();
 	        
+
+	        dialogStage.show();
+
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	}
+    @FXML
+    public void showCrecimiento() {
+	    try {
+	        // Carga el fichero XML con el pop up de las estadísticas
+	        FXMLLoader loader = new FXMLLoader();
+	        loader.setLocation(Main.class.getResource("/graficos/GraficoCrecimiento.fxml"));
+	        AnchorPane page = (AnchorPane) loader.load();
+	        Stage dialogStage = new Stage();
+	       
+	        dialogStage.initModality(Modality.WINDOW_MODAL);
+	        dialogStage.initOwner(primaryStage);
+	        Scene scene = new Scene(page);
+	        dialogStage.setScene(scene);
+
+	        CrecimientoController controller = loader.getController();
+	       
+
+	        dialogStage.show();
+
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	}
+    @FXML
+    public void showPico() {
+	    try {
+	        // Carga el fichero XML con el pop up de las estadísticas
+	        FXMLLoader loader = new FXMLLoader();
+	        loader.setLocation(Main.class.getResource("/graficos/GraficoPicoVentas.fxml"));
+	        AnchorPane page = (AnchorPane) loader.load();
+	        Stage dialogStage = new Stage();
+	       
+	        dialogStage.initModality(Modality.WINDOW_MODAL);
+	        dialogStage.initOwner(primaryStage);
+	        Scene scene = new Scene(page);
+	        dialogStage.setScene(scene);
+
+	        PicodeVentasController controller = loader.getController();
+	       
 
 	        dialogStage.show();
 
