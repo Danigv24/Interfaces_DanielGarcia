@@ -51,12 +51,12 @@
                </GridPane.margin>
             </Label>
             <ComboBox fx:id="combo1" editable="true" prefHeight="25.0" prefWidth="163.0" promptText="Seleccione un valor..." visibleRowCount="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <RadioButton mnemonicParsing="false" text="A domicilio" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <RadioButton fx:id="radiobutton" mnemonicParsing="false" text="A domicilio" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets left="20.0" />
                </GridPane.margin>
             </RadioButton>
-            <RadioButton mnemonicParsing="false" text="Tienda " GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <RadioButton fx:id="radiobutton2" mnemonicParsing="false" text="Tienda " GridPane.columnIndex="1" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets left="200.0" />
                </GridPane.margin>
@@ -77,7 +77,7 @@
                   <Insets left="10.0" />
                </padding>
             </Label>
-            <ListView fx:id="list1" editable="true" fixedCellSize="30.0" maxWidth="350.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <ListView fx:id="listaTiendas" editable="true" fixedCellSize="30.0" maxWidth="350.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
             <GridPane.margin>
                   <Insets bottom="10.0" right="10.0" />
                </GridPane.margin>

@@ -13,28 +13,36 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-
+/**
+ * Menu para abrir las diferentes ventanas de la aplicacion
+ * @author: Daniel Garcia
+ *	@version: 08/02/2023
+ * 
+ */
 public class MenuController {
 	
 	private Stage primaryStage;
 	private CrecimientoController creciController;
-	// Pantalla principal en la que se añade o quita contenido
+	// Pantalla principal en la que se aï¿½ade o quita contenido
 	private BorderPane rootLayout;
   
     @FXML
     private void initialize() {
         
     }
-    
+    /**
+     * 
+     * @param metodo que abre el formulario
+     */
     @FXML
     private void abrirFormulario(ActionEvent event) {    	
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinï¿½micos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesDinamicos.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se sitï¿½a en el centro del diseï¿½o principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -50,12 +58,12 @@ public class MenuController {
     @FXML
     private void abrirFormulario2(ActionEvent event) {    	
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinï¿½micos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesDinamicosB.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se sitï¿½a en el centro del diseï¿½o principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -67,15 +75,19 @@ public class MenuController {
     	// Se elimina el contenido del nodo central
     	rootLayout.setCenter(null);	
     }
+    /**
+     * 
+     * @param metodo que abre la tercera ventana
+     */
     @FXML
     private void abrirFormulario3(ActionEvent event) {    	
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinï¿½micos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/basicoDinamico/ControlesDinamicosC.fxml"));
 			BorderPane listadoControles = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se sitï¿½a en el centro del diseï¿½o principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -87,10 +99,13 @@ public class MenuController {
     	// Se elimina el contenido del nodo central
     	rootLayout.setCenter(null);	
     }
+    /**
+     * @param metodo que abre un PieChart
+     */
     @FXML
     public void showTopVentas() {
 	    try {
-	        // Carga el fichero XML con el pop up de las estadísticas
+	        // Carga el fichero XML con el pop up de las estadï¿½sticas
 	        FXMLLoader loader = new FXMLLoader();
 	        loader.setLocation(Main.class.getResource("/graficos/GraficoTopVentas.fxml"));
 	        AnchorPane page = (AnchorPane) loader.load();
@@ -110,10 +125,13 @@ public class MenuController {
 	        e.printStackTrace();
 	    }
 	}
+    /**
+     * @param metodo que abre un StackedBarCharrt
+     */
     @FXML
     public void showCrecimiento() {
 	    try {
-	        // Carga el fichero XML con el pop up de las estadísticas
+	        // Carga el fichero XML con el pop up de las estadï¿½sticas
 	        FXMLLoader loader = new FXMLLoader();
 	        loader.setLocation(Main.class.getResource("/graficos/GraficoCrecimiento.fxml"));
 	        AnchorPane page = (AnchorPane) loader.load();
@@ -133,10 +151,13 @@ public class MenuController {
 	        e.printStackTrace();
 	    }
 	}
+    /**
+     * @param metodo que abre LineChart
+     */
     @FXML
     public void showPico() {
 	    try {
-	        // Carga el fichero XML con el pop up de las estadísticas
+	        // Carga el fichero XML con el pop up de las estadï¿½sticas
 	        FXMLLoader loader = new FXMLLoader();
 	        loader.setLocation(Main.class.getResource("/graficos/GraficoPicoVentas.fxml"));
 	        AnchorPane page = (AnchorPane) loader.load();

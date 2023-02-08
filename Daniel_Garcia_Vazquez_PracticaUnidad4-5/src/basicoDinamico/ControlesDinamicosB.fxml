@@ -30,7 +30,7 @@
       </Label>
    </top>
    <left>
-      <ListView fx:id="list1" editable="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <ListView fx:id="ListaEmpleados" editable="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
   
    </left>
    <center>
@@ -57,7 +57,7 @@
    <bottom>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#AgregarStock" text="Añadir Stock">
+            <Button fx:id="btnAniadir" mnemonicParsing="false" onAction="#AgregarStock" text="Añadir Stock">
                <HBox.margin>
                   <Insets />
                </HBox.margin>

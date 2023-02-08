@@ -5,7 +5,12 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.chart.PieChart;
 
-
+/**
+ * Clase para el Grafico de PieChart
+ * @author: Daniel Garcia
+ *	@version: 08/02/2023
+ * 
+ */
 public class TopVentasController {
 	
 	@FXML
@@ -14,7 +19,7 @@ public class TopVentasController {
 	
 	@FXML
 	private void initialize() {
-		// Rellenamos los datos del gráfico
+		// Rellenamos los datos del grï¿½fico
 		ObservableList<PieChart.Data> pieChartData =
 				FXCollections.observableArrayList(
 						new PieChart.Data("NIKE Air Force 1", 45),

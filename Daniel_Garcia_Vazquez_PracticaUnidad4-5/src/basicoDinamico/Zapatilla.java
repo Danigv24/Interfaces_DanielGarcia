@@ -3,22 +3,13 @@ package basicoDinamico;
 
 import javafx.beans.property.SimpleStringProperty;
 
-/**
- * 
- * Clase auxiliar que se empleará para el modelo de datos del TableView
- * 
- * @author SBF
- * 
- */
 public class Zapatilla {
     private final SimpleStringProperty Name;
     private final SimpleStringProperty Stock;
    
     
  
-    /**
-	 * 
-	 */
+    
 	public Zapatilla() {
 		this(null,null);
 	}

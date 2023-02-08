@@ -23,7 +23,7 @@
             <TreeView fx:id="tree1" editable="true" prefHeight="151.0" prefWidth="348.0" GridPane.rowIndex="0" />
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
                <children>
-                  <Button mnemonicParsing="false" onAction="#abrirFormularioPedido" text="Pedir" />
+                  <Button fx:id="btn" mnemonicParsing="false" onAction="#abrirFormularioPedido" text="Pedir" />
                </children>
                <GridPane.margin>
                   <Insets />

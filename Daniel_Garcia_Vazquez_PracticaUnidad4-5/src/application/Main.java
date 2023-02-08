@@ -12,15 +12,18 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
 
-
-
+/**
+ * Clase Main donde se inicia la aplicacion
+ * @author: Daniel Garcia
+ *	@version: 08/02/2023
+ */
 public class Main extends Application {
-
+	
 	private BorderPane rootLayout;	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			// Carga el diseño del archivo FXML en la variable rootLayout
+			// Carga el diseï¿½o del archivo FXML en la variable rootLayout
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("Menu.fxml"));
 			rootLayout = (BorderPane) loader.load();
@@ -48,7 +51,7 @@ public class Main extends Application {
 		launch(args);
 	}
 	/**
-	 * Se abre un diálogo con las estadísticas de fecha de nacimiento
+	 * Se abre un diï¿½logo con las estadï¿½sticas de fecha de nacimiento
 	 */
 	
 	

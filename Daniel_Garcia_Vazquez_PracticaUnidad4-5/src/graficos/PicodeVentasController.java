@@ -8,7 +8,12 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.XYChart;
-
+/**
+ * Clase para el Grafico de LineChart
+ * @author: Daniel Garcia
+ *	@version: 08/02/2023
+ * 
+ */
 public class PicodeVentasController {
 	@FXML
     private LineChart<String, Number> lineChart;

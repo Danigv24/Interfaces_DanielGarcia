@@ -38,7 +38,12 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-
+/**
+ * Clase para la ventada de empleados de la aplicacion
+ * @author: Daniel Garcia
+ *	@version: 08/02/2023
+ * 
+ */
 public class ListController2  {
 	@FXML
 	private ImageView zapa1;
@@ -53,7 +58,7 @@ public class ListController2  {
     private ChoiceBox<String> choice1;
 
     @FXML
-    private ListView<String> list1;
+    private ListView<String> ListaEmpleados;
     
     @FXML
     private ComboBox<String> combo1;
@@ -97,15 +102,15 @@ public class ListController2  {
         // Se rellena la tabla con objetos de la clase Person
         tablaZapa.setItems(data);    
         
-        list1.getItems().addAll("Carlos Sainz (Staff)","Charles Lecrecl (Staff)",
+        ListaEmpleados.getItems().addAll("Carlos Sainz (Staff)","Charles Lecrecl (Staff)",
         		"Lando Norris(Supervisor)","Nicolas Latifi(Assitant Manager)",
         		"Max Verstappen(Staff)","Fernando Alonso(Manager)"
         		,"Lewis Hamilton(Staff)","Sebastian Vettel(Supervisor)",
         		"George Russel(Staff)","Alexander Albon(Staff)",
         		"Mick Schumacher(Staff)");
-        list1.setCellFactory(TextFieldListCell.forListView());
-        list1.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-        list1.getSelectionModel().getSelectedItems().addListener((Change<? extends String> cambio) -> {
+        ListaEmpleados.setCellFactory(TextFieldListCell.forListView());
+        ListaEmpleados.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+        ListaEmpleados.getSelectionModel().getSelectedItems().addListener((Change<? extends String> cambio) -> {
     		// Hay que llamar a next para obtener el cambio actual 
     		while (cambio.next()) {
     			 if (cambio.wasAdded()) {

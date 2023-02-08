@@ -8,7 +8,12 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.chart.StackedBarChart;
 import javafx.scene.chart.XYChart;
-
+/**
+ * Clase para el Grafico de StackedBarChart
+ * @author: Daniel Garcia
+ *	@version: 08/02/2023
+ * 
+ */
 public class CrecimientoController {
 	@FXML
     private StackedBarChart<String, Number> stackedBarChart;

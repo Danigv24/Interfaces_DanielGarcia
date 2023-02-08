@@ -40,14 +40,17 @@
     -fx-background-color:#F8C471;
     -fx-text-fill:black;
 }
-.list-cell{
+#ListaEmpleados .list-cell{
 	-fx-background-color:#71EE09 ;
+}
+#ListaTiendas{
+	-fx-background-color:#F8C471;
 }
 .tree-cell{
 	-fx-background-color:#F8C471;
 }
 .tree-cell:filled:selected:focused, .tree-cell:filled:selected {
-    -fx-background-color:#F8C471;
+    -fx-background-color:#9AC000;
     -fx-text-fill:black;
 }
 .combo-box:hover{
@@ -68,5 +71,35 @@
 	-fx-scale-x:1.5px;
 	-fx-scale-y:1.5px;
 }
-
+#bntEnviar{
+	-fx-background-color:#C00083;
+	-fx-text-fill:white;
+}
+#bntEnviar:hover{
+	
+	-fx-scale-x:1.5px;
+	-fx-scale-y:1.5px;
+}
+#btnAniadir{
+	-fx-background-color:#3EDBEB;
+	-fx-text-fill:black;
+}
+#btnAniadir:hover{
+	-fx-scale-x:1.5px;
+	-fx-scale-y:1.5px;
+}
+#btn{
+	-fx-background-color:#9AC000;
+	-fx-text-fill:black;
+}
+#btn:hover{
+	-fx-scale-x:1.5px;
+	-fx-scale-y:1.5px;
+}
+#radiobutton:pressed{
+	-fx-background-color:#C00083;
+}
+#radiobutton2:pressed{
+	-fx-background-color:#C00083;
+}
 

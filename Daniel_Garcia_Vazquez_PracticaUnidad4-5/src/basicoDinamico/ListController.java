@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -21,9 +22,17 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;
 
-
+/**
+ * Clase para el Formulario de la aplicacion
+ * @author: Daniel Garcia
+ *	@version: 08/02/2023
+ * 
+ */
 public class ListController {
-	
+	@FXML
+	private RadioButton radiobutton;
+	@FXML
+	private RadioButton radiobutton2;
 	@FXML
     private TextField txtDescripcion;
     
@@ -31,7 +40,7 @@ public class ListController {
     private ChoiceBox<String> choice1;
 
     @FXML
-    private ListView<String> list1;
+    private ListView<String> listaTiendas;
     
     @FXML
     private ComboBox<String> combo1;
@@ -62,8 +71,8 @@ public class ListController {
 
     @FXML
     private void initialize() {   
-        // Controles de JavaFX a los que se añaden directamente los items 
-    	// Ítems del ChoiceBox
+        // Controles de JavaFX a los que se aï¿½aden directamente los items 
+    	// ï¿½tems del ChoiceBox
         choice1.getItems().addAll("NIKE Air Force 1", "NIKE Air Jordan 1", "ADIDAS Forum",
         		"NEW BALANCE 2002R", "NIKE Air Max 90", 
         		"JORDAN 6 Rings", "EMPORIO ARMANI 7", "ADIDAS Superstar", "Fila Santiago",
@@ -82,16 +91,16 @@ public class ListController {
     });
         	
         
-        // Ítems del ComboBox
+        // ï¿½tems del ComboBox
         combo1.getItems().addAll("38","39", "40", "41", "42", "43", "44",
         		"45");
         
                 
-     // Ítems del ListView (con la segunda línea se asigna un CellFactory para permitir que sean editables)
-        list1.getItems().addAll("Islazul", "Parquesur", "Plaza Rio","Vaguada","Xanadú","Tres Aguas");
-        list1.setCellFactory(TextFieldListCell.forListView());
-        list1.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-        list1.getSelectionModel().getSelectedItems().addListener((Change<? extends String> cambio) -> {
+     // ï¿½tems del ListView (con la segunda lï¿½nea se asigna un CellFactory para permitir que sean editables)
+        listaTiendas.getItems().addAll("Islazul", "Parquesur", "Plaza Rio","Vaguada","Xanadu","Tres Aguas");
+        listaTiendas.setCellFactory(TextFieldListCell.forListView());
+        listaTiendas.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+        listaTiendas.getSelectionModel().getSelectedItems().addListener((Change<? extends String> cambio) -> {
     		// Hay que llamar a next para obtener el cambio actual 
     		while (cambio.next()) {
     			 if (cambio.wasAdded()) {
@@ -125,7 +134,7 @@ public class ListController {
     private void enviar() {
     	Alert alert= new Alert(Alert.AlertType.CONFIRMATION);
 		alert.setHeaderText(null);
-		alert.setTitle("Información");
+		alert.setTitle("Informaciï¿½n");
 		alert.setContentText("Se ha envidado correctamente");
 		alert.showAndWait();
     }
@@ -137,34 +146,34 @@ public class ListController {
     @FXML
     private void Precio(String zapa) {
     	if(zapa.equals("NIKE Air Force 1")) {
-    		txtprecio.setText("120€");
+    		txtprecio.setText("120ï¿½");
     	}
     	else if(zapa.equals("NIKE Air Jordan 1")){
-    		txtprecio.setText("150€");
+    		txtprecio.setText("150ï¿½");
     	}
     	else if(zapa.equals("ADIDAS Forum")){
-    		txtprecio.setText("100€");
+    		txtprecio.setText("100ï¿½");
     	}
     	else if(zapa.equals("NEW BALANCE 2002R")){
-    		txtprecio.setText("OFERTA! 70€");
+    		txtprecio.setText("OFERTA! 70ï¿½");
     	}
     	else if(zapa.equals("NIKE Air Max 90")){
-    		txtprecio.setText("140€");
+    		txtprecio.setText("140ï¿½");
     	}
     	else if(zapa.equals("JORDAN 6 Rings")){
-    		txtprecio.setText("170€");
+    		txtprecio.setText("170ï¿½");
     	}
     	else if(zapa.equals("EMPORIO ARMANI 7")){
-    		txtprecio.setText("210€");
+    		txtprecio.setText("210ï¿½");
     	}
     	else if(zapa.equals("ADIDAS Superstar")){
-    		txtprecio.setText("105€");
+    		txtprecio.setText("105ï¿½");
     	}
     	else if(zapa.equals("Fila Santiago")){
-    		txtprecio.setText("OFERTA! 50€");
+    		txtprecio.setText("OFERTA! 50ï¿½");
     	}
     	else if(zapa.equals("ADIDAS Stan Smith")){
-    		txtprecio.setText("115€");
+    		txtprecio.setText("115ï¿½");
     	}
     }
 	/**

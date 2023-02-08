@@ -13,7 +13,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 import javafx.stage.Stage;
-
+/**
+ * Clase para editar la tabla de la ventana de Empleados de la aplicacion
+ * @author: Daniel Garcia
+ *	@version: 08/02/2023
+ * 
+ */
 public class editarTabla {
 		@FXML
 		private  Button bntGuardar;
@@ -31,13 +36,13 @@ public class editarTabla {
 
 	    
 	    
-	    // Este componente será un diálogo. Campos auxiliares para su gestión
+	    // Este componente serï¿½ un diï¿½logo. Campos auxiliares para su gestiï¿½n
 //	    private Stage dialogStage;
 //	    private Zapatilla zapa;
 //	    private boolean okClicked = false;
 
 	    /**
-	     * Método para inicializar el controlador que se llama cuando se carga el FXML
+	     * Mï¿½todo para inicializar el controlador que se llama cuando se carga el FXML
 	     */
 	    @FXML
 	    private void initialize() {
@@ -64,8 +69,8 @@ public class editarTabla {
 				this.nuevaZapa=nueva;
 				Alert alert= new Alert(Alert.AlertType.CONFIRMATION);
 				alert.setHeaderText(null);
-				alert.setTitle("Información");
-				alert.setContentText("Se ha añadido correctamente");
+				alert.setTitle("Informaciï¿½n");
+				alert.setContentText("Se ha aï¿½adido correctamente");
 				alert.showAndWait();
 				
 				Stage stage = (Stage) this.bntGuardar.getScene().getWindow();
@@ -136,7 +141,7 @@ public class editarTabla {
 			return dialogStage;
 		}
 		/**
-	     * Método set de la propiedad dialogStage
+	     * Mï¿½todo set de la propiedad dialogStage
 	     * 
 	     * @param dialogStage
 	     */
