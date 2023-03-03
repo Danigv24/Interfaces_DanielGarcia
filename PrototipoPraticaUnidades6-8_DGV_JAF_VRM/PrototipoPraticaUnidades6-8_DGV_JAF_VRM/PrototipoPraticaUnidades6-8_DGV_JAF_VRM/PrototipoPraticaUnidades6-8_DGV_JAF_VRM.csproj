@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>PrototipoPraticaUnidades6_8_DGV_JAF_VRM</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="liga.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="liga.jpg" />
+  </ItemGroup>
+
+</Project>

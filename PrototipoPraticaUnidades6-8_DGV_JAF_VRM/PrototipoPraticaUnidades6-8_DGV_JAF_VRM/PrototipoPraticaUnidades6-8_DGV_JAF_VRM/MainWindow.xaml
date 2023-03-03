@@ -1,0 +1,16 @@
+﻿<Window x:Class="PrototipoPraticaUnidades6_8_DGV_JAF_VRM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrototipoPraticaUnidades6_8_DGV_JAF_VRM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Height="NaN" Margin="0,0,0,-6">
+        <Grid.Background>
+            <ImageBrush ImageSource="/liga.jpg"/>
+        </Grid.Background>
+        <Button Content="Iniciar Juego" HorizontalAlignment="Left" Margin="584,284,0,0" VerticalAlignment="Top" Height="38" Width="116" BorderBrush="#FF010101" Background="#FFA79393"/>
+        <Button x:Name="Ajustes" Content="Ajustes" HorizontalAlignment="Left" Margin="732,10,0,0" VerticalAlignment="Top" Click="Button_Click" IsCancel="True"/>
+    </Grid>
+</Window>
